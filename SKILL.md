@@ -6,6 +6,11 @@ name: xhs-radar
 description: "小红薯机会雷达数据源（只读）：关键词搜笔记、爆款选题、笔记详情、评论舆情、博主作品、粉丝获赞与收藏，输出 JSON，不登录不发布。触发词：小红书、小红薯、xhs、rednote、笔记链接、博主主页、竞品监控、KOL筛选、评论分析。用户要查小红书笔记、评论、选题、竞品或舆情时使用；抖音、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.2.3
+display_name: "小红薯机会雷达｜蓝海选题·低竞争笔记·流量洼地·热点捕捉"
+display_name_en: "Xiaohongshu Opportunity Radar"
+description_zh: "小红薯机会雷达数据源（只读）：关键词搜索笔记（内容类型全部/视频/图文、排序综合/最新/最多点赞/最多评论/最多收藏、时间全部/一天内/一周内/半年内、条数 1–10000 多维筛选）、单篇笔记详情（标题/正文/图片/互动/作者，不含评论）、笔记评论舆情（可按近 N 天或指定时间点过滤）、博主作品列表与粉丝/获赞/收藏画像（limit=0 只取账号数据）；支持 explore、discovery/item、xhslink 短链与 24 位笔记 id / 24·29 位 user_id，可整段粘贴 App 分享文案自动抽链并保留 xsec_token。成功/无结果/失败统一 JSON 信封，stdout 纯 JSON、stderr 日志，零第三方依赖，国内直连。不登录、不发布、不点赞、不评论、不关注，无封号风险。按量单次最多 1 万条；包月搜索≤40、作品≤30、评论≤20（详情无条数限制），超限返回 PLAN_LIMIT（退出码 1）可降 limit 或升级套餐，须用户同意后再跑。适用于蓝海选题挖掘、低竞争笔记赛道、流量洼地发现与热点捕捉。"
+description_en: "Read-only Xiaohongshu (Rednote) opportunity-radar data source: keyword note search with multi-dimensional filters (content type all/video/image-text, sort by comprehensive/latest/most-liked/most-commented/most-collected, time window all/day/week/half-year, 1–10,000 items), single-note details (title, body, images, engagement, author — comments excluded), comment sentiment mining filterable by last N days or a specific cutoff date, and creator note lists with follower/like/collection profiles (limit=0 returns account stats only). Accepts explore and discovery/item links, xhslink short links, bare 24-char note ids and 24/29-char user ids, and auto-extracts links (keeping xsec_token) from pasted app share text. Success, no-match, and failure share one JSON envelope; stdout is pure JSON, logs go to stderr, zero third-party dependencies, direct connection from mainland China. No login, publishing, liking, commenting, or following — no account-ban risk. Pay-per-use runs cap at 10,000 items; monthly plans cap search/creator-notes/comments at 40/30/20 (note details unlimited), returning PLAN_LIMIT (exit code 1) on breach — lower --limit or upgrade with user consent before retrying. Ideal for blue-ocean topic mining, low-competition note niches, traffic-gap discovery, and hot-trend capture."
+author: "新郑市怪奇信息技术工作室"
 category: 数据分析
 homepage: https://www.guaikei.com
 metadata:
